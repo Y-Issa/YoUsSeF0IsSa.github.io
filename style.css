@@ -116,7 +116,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    height: 550px;
+    height: 540px;
     background: url('images/background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
@@ -181,19 +181,19 @@ p {
 
 
 .container #info {
-   padding: 60px;
-    /* height: 100%;*/
+    padding: 0 55px;
     background-color: transparent;
-    /*backdrop-filter: blur(20px);
-    border-radius: 5px;*/
     color:#e4e4e4; 
     overflow-y: scroll;
-    max-height: 550px;
+    max-height: 540px;
     scroll-behavior: smooth !important;
 }
+.container #about {
+    padding-top: 30px;
+}
 
-.skilldiv {
-    padding: 0 40px;
+.container #skills {
+    padding: 10px 0;
 }
 
 .skill {
@@ -218,6 +218,51 @@ p {
     height: 90px;
 }
 
+.container #projects {
+    padding: 10px 0 ;
+}
+
+.container #contact {
+    padding: 10px 0;
+}
+
+.container #contact a {
+    color: #e4e4e4;
+    text-decoration: none;
+}
+
+.container #contact h2 {
+    padding-bottom: 10px;
+}
+
+
+    #contact_form input,
+    #contact_form textarea {
+        background: rgba(235, 182, 182, 0.229); 
+        border: none;
+        color: #e4e4e4;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #contact_form input::placeholder,
+    #contact_form textarea::placeholder {
+        color: #e4e4e4;
+    }
+    #contact_form button {
+        background-color: rgba(222, 182, 235, 0.229);
+        color: #e4e4e4;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    #response {
+        margin-top: 10px;
+    }
 
 div.scroll {
   background: transparent;
