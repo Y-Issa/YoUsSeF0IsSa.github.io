@@ -236,33 +236,7 @@ p {
 }
 
 
-    #contact_form input,
-    #contact_form textarea {
-        background: rgba(235, 182, 182, 0.229); 
-        border: none;
-        color: #e4e4e4;
-        border-radius: 5px;
-        padding: 10px;
-        margin-bottom: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    #contact_form input::placeholder,
-    #contact_form textarea::placeholder {
-        color: #e4e4e4;
-    }
-    #contact_form button {
-        background-color: rgba(222, 182, 235, 0.229);
-        color: #e4e4e4;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    #response {
-        margin-top: 10px;
-    }
+    
 
 div.scroll {
   background: transparent;
@@ -274,3 +248,31 @@ div.scroll {
 
 
 
+#contact_form input,
+#contact_form textarea {
+    background: rgba(235, 182, 182, 0.229);
+    border: none;
+    color: #e4e4e4;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-text-fill-color: #e4e4e4 !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+#contact_form input::placeholder,
+#contact_form textarea::placeholder {
+    color: #e4e4e4;
+}
+
+#contact_form button {
+    background-color: rgba(222, 182, 235, 0.229);
+    color: #e4e4e4;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
