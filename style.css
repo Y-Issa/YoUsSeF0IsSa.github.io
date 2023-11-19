@@ -15,7 +15,7 @@ body {
 /* scrolling bar */
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -32,16 +32,6 @@ body {
     background: #3d3c3b;
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blinking {
-  0% {border-color: transparent}
-  50% {border-color: #e4e4e4}
-  100% {border-color: transparent}
-}
 
 .header {
     position: relative;
@@ -112,9 +102,9 @@ body {
 
 .container {
     position: absolute;
-    top: 49%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-47.6%, -50%);
     width: 80%;
     height: 540px;
     background: url('images/background.jpg') no-repeat;
@@ -133,20 +123,6 @@ body {
     color: #e4e4e4;
     text-align: center;
     margin-right: 10px;
-}
-
-.typediv {
-    display: inline-block;
-    font-size: 25px;
-}
-.typed-out {
-    display: block;
-    overflow: hidden;
-    border-right: .15em solid #e4e4e4;
-    white-space: nowrap;
-    border-right: 2px solid;
-    width: 0;
-    animation: typing 1.2s steps(15, end) forwards, blinking 1s infinite;
 }
   
 
@@ -181,7 +157,7 @@ p {
 
 
 .container #info {
-    padding: 0 55px;
+    padding: 0 45px;
     background-color: transparent;
     color:#e4e4e4; 
     overflow-y: scroll;
@@ -223,7 +199,7 @@ p {
 }
 
 .container #contact {
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .container #contact a {
@@ -236,6 +212,11 @@ p {
 }
 
 
+.contactdiv {
+    backdrop-filter: blur(10px);
+    background: rgba(19, 20, 20, 0.224);
+    border-radius: 10px;
+}
     
 
 div.scroll {
@@ -268,8 +249,8 @@ div.scroll {
     color: #e4e4e4;
 }
 
-#contact_form button {
-    background-color: rgba(222, 182, 235, 0.229);
+#contact_form .btn {
+    background-color: rgba(235, 182, 182, 0.229);
     color: #e4e4e4;
     border: none;
     padding: 10px 20px;
